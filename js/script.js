@@ -117,12 +117,19 @@ if (selects) {
 	});
 }
 
+const form = document.querySelector('.form');
 const input = document.querySelector('.form__input input');
 
 input.addEventListener('input', function(event) {
 	this.dataset.initialValue = this.value;
 });
 input.addEventListener('change', function(event) {
-	this.setAttribute('badinput', 'false');
-	this.setAttribute('aria-invalid', 'false');
+// 	this.setAttribute('badinput', 'false');
+// 	this.setAttribute('aria-invalid', 'false');
 });
+
+form.addEventListener('submit', function(event){
+	console.log('submit');
+	event.preventDefault();
+});
+
