@@ -116,3 +116,9 @@ if (selects) {
 		});
 	});
 }
+
+const input = document.querySelector('.form__input input');
+
+input.addEventListener('input', function(event) {
+	this.dataset.initialValue = this.value;
+});
