@@ -130,6 +130,6 @@ input.addEventListener('change', function(event) {
 
 form.addEventListener('submit', function(event){
 	console.log('submit');
-	event.preventDefault();
+// 	event.preventDefault();
 });
 
