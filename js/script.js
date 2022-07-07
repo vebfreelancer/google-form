@@ -122,3 +122,7 @@ const input = document.querySelector('.form__input input');
 input.addEventListener('input', function(event) {
 	this.dataset.initialValue = this.value;
 });
+input.addEventListener('change', function(event) {
+	this.setAttribute('badinput', 'false');
+	this.setAttribute('aria-invalid', 'false');
+});
